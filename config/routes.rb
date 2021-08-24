@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get 'sign_up', to: 'registrations#new'
   post 'sign_up', to: 'registrations#create'
 
+  get 'password', to: 'passwords#edit', as: :edit_password
+  patch 'password', to: 'passwords#update'
+
   delete 'logout', to: 'sessions#destroy'
 
   get 'sign_in', to: 'sessions#new'
