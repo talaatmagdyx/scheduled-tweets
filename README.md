@@ -1,24 +1,20 @@
-# README
+# Scheduled Tweets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Boot instructions
+Start rails server:
+* bundle install
+* bundle exec rails s
 
-Things you may want to cover:
+Start webpack:
+* yarn install
+* bin/webpacker-dev-server
 
-* Ruby version
+How to add/update credentials?
 
-* System dependencies
+`rails credentials:edit --environment production`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ymal
+twitter:
+   api_key: YOUR_API_KEY
+   api_secret: YOUR_API_SECRET
+```
